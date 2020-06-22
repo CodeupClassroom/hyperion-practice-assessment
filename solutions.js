@@ -80,11 +80,5 @@ function and(input1, input2){
 function concat(input1, input2){
     if (typeof(input1) === "string" && typeof(input2)==="string") {
         return (input1 + input2);
-    } if typeof(input1)==="number"{
-        if typeof input2 ==="number"{
-            return input1.toString(2)+input2.toString(2);
-        } else {
-            return input2.toString(2)+ input2;
-        }
     }
 }
