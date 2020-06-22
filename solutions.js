@@ -30,17 +30,12 @@ function isFalse(input) {
     return input === false;
 }
 
-function addOne(input) {
-    // if (!isNaN(input)) {
-    //     return parseFloat(input) + 1;
-    // } else {
-    //     return NaN;
-    // }
-    return parseFloat(input) + 1;
-}
-
 function not(input) {
     return !input;
+}
+
+function addOne(input) {
+    return parseFloat(input) + 1;
 }
 
 function isEven(num) {
