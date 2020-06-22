@@ -21,48 +21,134 @@
  * concat
  */
 
+// Define a function named isTrue that takes in any input and returns true if the input provided is exactly equal to true in value and data type.
+//
+isTrue(true)             // true
+isTrue(false)            // false
+isTrue(0)                // false
+isTrue(null)             // false
+isTrue("true")           // false
+isTrue("Banana")         // false
+isTrue([1, 2])           // false
 
 function isTrue(input) {
-    return input === true;
+    if (input === true) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-function isFalse(input) {
-    return input === false;
+//Define a function named isFalse that takes in a value and returns a true if and only if the provided input is
+// equal to false in both type and value.
+
+isFalse(false)             // true
+isFalse(true)              // false
+isFalse(0)                 // false
+isFalse(null)              // false
+isFalse("")                // false
+isFalse("Banana")          // false
+isFalse([1, 2])            // false
+
+function isFalse(value) {
+    if ( value === false) {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+//Define a function named not that takes in any input and returns the boolean opposite of the provided input.
+function not(input) {
+    if (input === true) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+not(false)                  // true
+not(0)                      // true
+not("")                     // true
+not(null)                   // true
+not(NaN)                    // true
+not(undefined)              // true
+not(true)                   // false
+not("something")            // false
+not(Infinity)               // false
+not(123)                    // false
+
+
+//Define a function named addOne that takes in a single input. If the input is a number or a numeric string, return
+// the value plus one.
 
 function addOne(input) {
-    // if (!isNaN(input)) {
-    //     return parseFloat(input) + 1;
-    // } else {
-    //     return NaN;
-    // }
-    return parseFloat(input) + 1;
+    if (input < 0 && input > 0) {
+        return input++
+    }
 }
 
-function not(input) {
-    return !input;
+
+addOne(0)                    // 1
+addOne(2)                    // 3
+addOne(-5)                   // -4
+addOne(5.789)                // 6.789
+addOne(Infinity)             // Infinity
+addOne("2")                  // 3
+addOne("0")                  // 1
+addOne("banana")             // NaN
+addOne(true)                 // NaN
+addOne(NaN)                  // NaN
+
+
+//Define a function named isEven that takes in a single input. If the input is an even number or a string containing
+// an even number, return true. Any other input should return false for the output.
+
+function isEven(input) {
+    if ( input % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-function isEven(num) {
-    return parseFloat(num) % 2 === 0;
+isEven(2)                   // true
+isEven(-8)                  // true
+isEven(0)                   // true
+isEven("42")                // true
+isEven(1)                   // false
+isEven("-3")                // false
+isEven(false)               // false
+isEven("banana")            // false
+
+//Define a function named isIdentical that takes in two input arguments. If each input is equal both in data type
+// and in value, then return true. If the values are not the same data type or not the same value, return false.
+
+function isIdentical(input1, input2) {
+    if (input1 === input2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+isIdentical(3, 3)                     // true
+isIdentical(false, false)             // true
+isIdentical("hello", "hello")         // true
+isIdentical(3, 3.0)                   // true
+isIdentical(undefined, undefined)     // true
+isIdentical(2, "2")                   // false
+isIdentical("javascript", "java")     // false
+
+
+//Define a function named isEqual that takes in two input arguments. If each argument is equal only in value, then
+// return true. Otherwise return false.
+function isEqual(input1, input2) {
+
 }
 
-function isIdentical(value1, value2) {
-    return value1 === value2;
-}
-
-function isEqual(value1, value2) {
-    return value1 == value2;
-}
-
-function or(value1, value2) {
-    return value1 || value2;
-}
-
-function and(value1, value2) {
-    return value1 && value2;
-}
-
-function concat(value1, value2) {
-    return "" + value1 + value2;
-}
+isEqual(3, "3")                       // true
+isEqual("abc123", "abc123")           // true
+isEqual(true, 1)                      // true
+isEqual(0, false)                     // true
+isEqual(4, -5)                        // false
+isEqual("java", "javascript")         // false
