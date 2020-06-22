@@ -4,7 +4,7 @@
 "Ten Functions" is a prepared environment for practicing introductory function writing with automated tests for feedback.
 
 ## Getting Started
-0. Setup your own copy of the code using the instructions above
+0. Setup your own copy of the code using the instructions below
 1. Read the exercise prompts listed below
 2. Define your functions that solve the prompts inside of `solutions.js`.
 3. Use feedback from `index.html` to improve responses
