@@ -22,47 +22,11 @@
  */
 
 
-function isTrue(input) {
-    return input === true;
+function isTrue (input) {
+    return input ===true;
+
+function typeOf(hello,codeup){
+    concat(hello,codeup)
+}
 }
 
-function isFalse(input) {
-    return input === false;
-}
-
-function addOne(input) {
-    // if (!isNaN(input)) {
-    //     return parseFloat(input) + 1;
-    // } else {
-    //     return NaN;
-    // }
-    return parseFloat(input) + 1;
-}
-
-function not(input) {
-    return !input;
-}
-
-function isEven(num) {
-    return parseFloat(num) % 2 === 0;
-}
-
-function isIdentical(value1, value2) {
-    return value1 === value2;
-}
-
-function isEqual(value1, value2) {
-    return value1 == value2;
-}
-
-function or(value1, value2) {
-    return value1 || value2;
-}
-
-function and(value1, value2) {
-    return value1 && value2;
-}
-
-function concat(value1, value2) {
-    return "" + value1 + value2;
-}
