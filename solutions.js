@@ -22,47 +22,18 @@
  */
 
 
-function isTrue(input) {
-    return input === true;
+function isTrue(val) {
+    val = true;
 }
 
-function isFalse(input) {
-    return input === false;
+function concat(one, two) {
+    return (one + two)
 }
 
-function addOne(input) {
-    // if (!isNaN(input)) {
-    //     return parseFloat(input) + 1;
-    // } else {
-    //     return NaN;
-    // }
-    return parseFloat(input) + 1;
-}
+function isFalse(val) {
+    return val=false;
+    }
 
-function not(input) {
-    return !input;
-}
+function not(num){
+    return num = NaN;}
 
-function isEven(num) {
-    return parseFloat(num) % 2 === 0;
-}
-
-function isIdentical(value1, value2) {
-    return value1 === value2;
-}
-
-function isEqual(value1, value2) {
-    return value1 == value2;
-}
-
-function or(value1, value2) {
-    return value1 || value2;
-}
-
-function and(value1, value2) {
-    return value1 && value2;
-}
-
-function concat(value1, value2) {
-    return "" + value1 + value2;
-}
