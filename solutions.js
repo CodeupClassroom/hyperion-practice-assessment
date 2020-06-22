@@ -24,93 +24,35 @@
 function isTrue(input) {
     return input === true;
 }
-console.log(isTrue(true)); //true
-console.log(isTrue(false)); //false
-console.log(isTrue(0));//false
-console.log(isTrue(null));//false
-console.log(isTrue("true"));//false
-console.log(isTrue("banana"));//false
-console.log(isTrue([1,2]));//false
 
-function isFalse(input) {
+function isFalse (input) {
     return input === false;
 }
-
-console.log(isFalse(null));
-console.log(isFalse(true));
-console.log(isFalse(undefined));
-console.log(isFalse("1"));
-console.log(isFalse(23));
-console.log(isFalse(false));
-console.log(isFalse(function()));
-
-
-function not (input) {
+function not(input) {
     return !input;
 }
-not(false);
-not(0);
-not("");
-not(null);
-not(NaN);
-not(undefined);
-not(true);
-not("something");
-not(Infinity);
-not(123);
-
-
-function addOne(input) {
-    return parseInt(input) + 1;
+function concat(input1, input2){
+    return "" + input1 + input2;
 }
-
-function isEven (input) {
-    if(input % 2 ===0) {
-        return true;
-    }else {
-        return false;
-    }
+function addOne(num) {
+    return parseFloat(num) + 1;
 }
-
-function isIdentical (x, y) {
-    if ( x === y){
-        return true;
-    } else {
-        return false;
-    }
+function isEven(num) {
+    return parseFloat(num) % 2 === 0;
 }
+function isEqual(num1, num2) {
+    return num1 == num2;
 
-function isEqual (a, b) {
-    if(a == b) {
-        return true;
-    }else {
-        return false;
-    }
 }
-
-function or(w, z) {
-    return w || z;
+function isIdentical(input1,input2) {
+    return input1 === input2;
 }
-
-function and(c, d) {
-    return c && d;
+function or(input1, input2){
+    return input1 || input2;
 }
-
-function concat(e, f) {
-    return "e" + "f";
+function and(input1, input2) {
+    return input1 && input2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
