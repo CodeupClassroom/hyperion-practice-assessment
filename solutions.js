@@ -20,6 +20,7 @@
  * and
  * concat
  */
+//comment
 
 
 function isTrue(input) {
