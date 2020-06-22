@@ -21,48 +21,42 @@
  * concat
  */
 
-
-function isTrue(input) {
-    return input === true;
+function isTrue(param1) {
+    return (param1 = true);
 }
 
-function isFalse(input) {
-    return input === false;
+function isFalse(param2) {
+    return (param2 +false);
 }
 
-function addOne(input) {
-    // if (!isNaN(input)) {
-    //     return parseFloat(input) + 1;
-    // } else {
-    //     return NaN;
-    // }
-    return parseFloat(input) + 1;
+function not(param1) {
+    return !param1;
 }
 
-function not(input) {
-    return !input;
+function addOne(number) {
+    return parseFloat(number +1)
 }
 
-function isEven(num) {
-    return parseFloat(num) % 2 === 0;
+function isEven(number) {
+    return parseFloat(number) % 2 === 0;
 }
 
-function isIdentical(value1, value2) {
-    return value1 === value2;
+function isIdentical(param1, param2) {
+    return param1 === param2;
 }
 
-function isEqual(value1, value2) {
-    return value1 == value2;
+function isEqual(num1, num2) {
+    return num1 == num2;
 }
 
-function or(value1, value2) {
-    return value1 || value2;
+const or = function(param1, param2) {
+    return param1 || parm2;
 }
 
-function and(value1, value2) {
-    return value1 && value2;
+const and = function(str) {
+    return str= ("param1" && "param2");
 }
 
-function concat(value1, value2) {
-    return "" + value1 + value2;
+const concat = function(str) {
+    return str = ("code" + "up")
 }
