@@ -21,48 +21,156 @@
  * concat
  */
 
-
 function isTrue(input) {
     return input === true;
 }
+console.log(isTrue(true)); //true
+console.log(isTrue(false)); //false
+console.log(isTrue(0));//false
+console.log(isTrue(null));//false
+console.log(isTrue("true"));//false
+console.log(isTrue("banana"));//false
+console.log(isTrue([1,2]));//false
 
 function isFalse(input) {
     return input === false;
 }
 
-function addOne(input) {
-    // if (!isNaN(input)) {
-    //     return parseFloat(input) + 1;
-    // } else {
-    //     return NaN;
-    // }
-    return parseFloat(input) + 1;
-}
+console.log(isFalse(null));
+console.log(isFalse(true));
+console.log(isFalse(undefined));
+console.log(isFalse("1"));
+console.log(isFalse(23));
+console.log(isFalse(false));
+console.log(isFalse(function()));
 
-function not(input) {
+
+function not (input) {
     return !input;
 }
+not(false);
+not(0);
+not("");
+not(null);
+not(NaN);
+not(undefined);
+not(true);
+not("something");
+not(Infinity);
+not(123);
 
-function isEven(num) {
-    return parseFloat(num) % 2 === 0;
+
+function addOne(input) {
+    return parseInt(input) + 1;
 }
 
-function isIdentical(value1, value2) {
-    return value1 === value2;
+function isEven (input) {
+    if(input % 2 ===0) {
+        return true;
+    }else {
+        return false;
+    }
 }
 
-function isEqual(value1, value2) {
-    return value1 == value2;
+function isIdentical (x, y) {
+    if ( x === y){
+        return true;
+    } else {
+        return false;
+    }
 }
 
-function or(value1, value2) {
-    return value1 || value2;
+function isEqual (a, b) {
+    if(a == b) {
+        return true;
+    }else {
+        return false;
+    }
 }
 
-function and(value1, value2) {
-    return value1 && value2;
+function or(w, z) {
+    return w || z;
 }
 
-function concat(value1, value2) {
-    return "" + value1 + value2;
+function and(c, d) {
+    return c && d;
 }
+
+function concat(e, f) {
+    return "e" + "f";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function isTrue(input) {
+//     return input === true;
+//
+// }
+// isTrue(true)
+// isTrue(false)
+// isTrue(0)
+// isTrue(null)
+// isTrue("true")
+// isTrue("Banana")
+// isTrue([1, 2])
+//
+// function isFalse(input) {
+//     return input === false;
+// }
+//
+// function addOne(input) {
+//     // if (!isNaN(input)) {
+//     //     return parseFloat(input) + 1;
+//     // } else {
+//     //     return NaN;
+//     // }
+//     return parseFloat(input) + 1;
+// }
+//
+// function not(input) {
+//     return !input;
+// }
+//
+// function isEven(num) {
+//     return parseFloat(num) % 2 === 0;
+// }
+//
+// function isIdentical(value1, value2) {
+//     return value1 === value2;
+// }
+//
+// function isEqual(value1, value2) {
+//     return value1 == value2;
+// }
+//
+// function or(value1, value2) {
+//     return value1 || value2;
+// }
+//
+// function and(value1, value2) {
+//     return value1 && value2;
+// }
+//
+// function concat(value1, value2) {
+//     return "" + value1 + value2;
+// }
