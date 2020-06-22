@@ -21,48 +21,45 @@
  * concat
  */
 
-
-function isTrue(input) {
-    return input === true;
+function isTrue(str){
+    return str === true;
 }
 
-function isFalse(input) {
-    return input === false;
+function isFalse(str){
+    return str === false;
 }
 
-function addOne(input) {
-    // if (!isNaN(input)) {
-    //     return parseFloat(input) + 1;
-    // } else {
-    //     return NaN;
-    // }
-    return parseFloat(input) + 1;
+function not(str){
+    return !str;
 }
 
-function not(input) {
-    return !input;
+function addOne(str){
+    return (parseFloat(str) + 1);
 }
 
-function isEven(num) {
-    return parseFloat(num) % 2 === 0;
+function isEven(str){
+    return parseInt(str)%2 === 0;
 }
 
-function isIdentical(value1, value2) {
-    return value1 === value2;
+function isIdentical(str1, str2){
+    return str1 === str2;
 }
 
-function isEqual(value1, value2) {
-    return value1 == value2;
+function isEqual(str1, str2){
+    return str1 == str2;
 }
 
-function or(value1, value2) {
-    return value1 || value2;
+function or(str1, str2){
+    return str1 || str2;
 }
 
-function and(value1, value2) {
-    return value1 && value2;
+function and(str1, str2){
+    return str1 && str2;
 }
 
-function concat(value1, value2) {
-    return "" + value1 + value2;
+function concat(str1, str2){
+    return (str1 + "") + str2;
 }
+
+/**
+ */
