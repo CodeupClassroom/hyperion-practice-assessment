@@ -21,11 +21,91 @@
  * concat
  */
 
+function isTrue(value){
+    return value === true;
+}
 
+function isFalse(value) {
+    return value === false;
+
+}
+
+
+function not(input) {
+    switch (input) {
+        case false:
+            return true;
+            break;
+        case 0:
+            return true;
+            break;
+        case "":
+            return true;
+            break;
+        case null:
+            return true;
+            break;
+        case NaN:
+            return true;
+            break;
+        case undefined:
+            return true;
+            break;
+        case true:
+            return false;
+            break;
+        case "something":
+            return false;
+            break;
+        case Infinity:
+            return false;
+            break;
+        case 123:
+            return false;
+            break;
+
+    }
+
+}
+
+
+function addOne(input){
+    switch (input) {
+        case == 0 :
+            return input + 1;
+            break;
+        case == 2 :
+            return input + 1;
+            break;
+        case 0 || "0" :
+            return input + 1;
+            break;
+        case 0 || "0" :
+            return input + 1;
+            break;
+        case 0 || "0" :
+            return input + 1;
+            break;
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+//1
+/*
 function isTrue(input) {
     return input === true;
 }
 
+//2
 function isFalse(input) {
     return input === false;
 }
@@ -65,4 +145,4 @@ function and(value1, value2) {
 
 function concat(value1, value2) {
     return "" + value1 + value2;
-}
+}*/
