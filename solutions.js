@@ -50,7 +50,7 @@ return input === input;
 }
 
 function or(input) {
-return = input || input;
+return  input || input;
 }
 
 function and(input) {
@@ -58,7 +58,7 @@ return input && input;
 }
 
 function concat(input) {
-return = input + input;
+return  input + input;
 }
 
 //////////////////////////
