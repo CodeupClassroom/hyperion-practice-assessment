@@ -21,48 +21,44 @@
  * concat
  */
 
-
 function isTrue(input) {
-    return input === true;
+return input === true;
 }
 
 function isFalse(input) {
-    return input === false;
-}
-
-function addOne(input) {
-    // if (!isNaN(input)) {
-    //     return parseFloat(input) + 1;
-    // } else {
-    //     return NaN;
-    // }
-    return parseFloat(input) + 1;
+return input === false;
 }
 
 function not(input) {
-    return !input;
+return input !== true;
 }
 
-function isEven(num) {
-    return parseFloat(num) % 2 === 0;
+function addOne(input) {
+return input === + 1;
 }
 
-function isIdentical(value1, value2) {
-    return value1 === value2;
+function isEven (input) {
+return input % 2;
 }
 
-function isEqual(value1, value2) {
-    return value1 == value2;
+function isIdentical(input) {
+return input === input;
 }
 
-function or(value1, value2) {
-    return value1 || value2;
+function isEqual(input) {
+return input === input;
 }
 
-function and(value1, value2) {
-    return value1 && value2;
+function or(input) {
+return = input || input;
 }
 
-function concat(value1, value2) {
-    return "" + value1 + value2;
+function and(input) {
+return input && input;
 }
+
+function concat(input) {
+return = input + input;
+}
+
+//////////////////////////
