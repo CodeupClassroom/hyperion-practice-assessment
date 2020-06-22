@@ -4,7 +4,7 @@
 "Ten Functions" is a prepared environment for practicing introductory function writing with automated tests for feedback.
 
 ## Getting Started
-0. Setup your own copy of the code using the instructions above
+0. Setup your own copy of the code using the instructions below
 1. Read the exercise prompts listed below
 2. Define your functions that solve the prompts inside of `solutions.js`.
 3. Use feedback to improve responses
@@ -12,7 +12,7 @@
 
 
 ## The "Ten Functions" Exercises 👟
-0. The comments to the right of the function call example demonstrate the output of the function's operation on the provided input(s). Add your function definitions to `solutions.js`. Refresh `results.html` to run automated tests for feedback on your solutions.
+0. The comments to the right of the function call example demonstrate the output of the function's operation on the provided input(s). Add your function definitions to `solutions.js`. Refresh `index.html` to run automated tests for feedback on your solutions.
 
 1. Define a function named `isTrue` that takes in any input and returns true if the input provided is exactly equal to `true` in value and data type.
         
