@@ -7,12 +7,12 @@
 0. Setup your own copy of the code using the instructions above
 1. Read the exercise prompts listed below
 2. Define your functions that solve the prompts inside of `solutions.js`.
-3. Use feedback to improve responses
+3. Use feedback from `index.html` to improve responses
 4. Submit issues and patches to the <a href="https://github.com/ryanorsinger/ten-functions/issues">Ten Functions project</a>
 
 
 ## The "Ten Functions" Exercises 👟
-0. The comments to the right of the function call example demonstrate the output of the function's operation on the provided input(s). Add your function definitions to `solutions.js`. Refresh `results.html` to run automated tests for feedback on your solutions.
+0. The comments to the right of the function call example demonstrate the output of the function's operation on the provided input(s). Add your function definitions to `solutions.js`. Refresh `index.html` to run automated tests for feedback on your solutions.
 
 1. Define a function named `isTrue` that takes in any input and returns true if the input provided is exactly equal to `true` in value and data type.
         
@@ -119,11 +119,25 @@
         concat(true, true)                  // "truetrue"
         
 ## Files in this project
-- `index.html` is the welcome page
-- `results.html` shows the ouptut from automated test data
+- `index.html` shows the ouptut from automated test data
 - `solutions.js` is where you will write your function definitions that solve the exercises below
 - `tests.js` is the suite of automated tests that call your functions in `solutions.js` with different inputs.
 
+## How solutions will be graded
+
+- Your grade is entirely dependent on the completeness of your solutions
+
+- No credit will be given for code that cannot run due to typos or syntax errors.
+
+- No credit will be given for commented out code.
+
+- There are ten questions on the test. Below is an example of how a question appears on the test.<br><kbd><img src="./images/test-question.png" ></kbd>
+
+- Each question counts for 10 points of the final grade.
+
+- For a question to be counted as correct all specs must pass for the question.<br><kbd><img src="./images/correct-answer.png" ></kbd>
+
+- If any of the specs are red for the question then the entire question will be considered incorrect.<br><kbd><img src="./images/incorrect-answer.png" ></kbd>
 
 ## Hints
 
