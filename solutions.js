@@ -22,18 +22,120 @@
  */
 
 
-function isTrue(val) {
-    val = true;
+//1
+function isTrue(num){
+return num === true;
 }
 
-function concat(one, two) {
-    return (one + two)
-}
+// 2
+function isFalse(num){
+return num === false;}
 
-function isFalse(val) {
-    return val=false;
-    }
-
+// 3 *********
 function not(num){
-    return num = NaN;}
+return !num;}
 
+//4
+function addOne(num){
+return parseFloat(num) + 1;
+}
+
+//5
+function isEven(num){
+return parseFloat(num) % 2 === 0;
+}
+
+//6
+function isIdentical(x, y){
+return x === y;
+}
+
+//7
+function isEqual(x,y){
+return x==y;
+}
+
+//8
+function or (x,y) {
+return x || y;
+}
+
+//9
+function and(x,y){
+return x && y;
+}
+
+//10
+function concat(x,y){
+return ("" + x + y)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// function isTrue(val) {
+//     return val === true;
+// }
+//
+// function isFalse(val) {
+//     return val === false;
+// }
+//
+// function not(input) {
+//     return !input;
+// }
+//
+// function addOne(num) {
+// return parseFloat(num) + 1;
+// }
+//
+// function isEven(num){
+// return parseFloat(num) % 2 === 0;
+// }
+//
+// function isIdentical(one, two){
+// return one === two;
+// }
+//
+// function or(one, two){
+// return one || two;
+// }
+//
+// function isEqual(one, two){
+// return one == two;
+// }
+//
+// function and(one, two){
+// return one && two;
+// }
+//
+//
+// function concat(one, two) {
+//     return "" + one + two;
+// }
+//
